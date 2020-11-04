@@ -17,3 +17,6 @@ label.draw(win)
 # Add a clear rectangle to image
 rect = Rectangle(Point(20, 30), Point(70, 70))
 rect.draw(win)
+
+win.getMouse()
+win.close()
