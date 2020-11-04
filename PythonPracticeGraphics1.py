@@ -18,5 +18,13 @@ label.draw(win)
 rect = Rectangle(Point(20, 30), Point(70, 70))
 rect.draw(win)
 
+# Add a line segment across the image
+line = Line(Point(20, 30), Point(180, 165))
+line.draw(win)
+
+# Add an Oval at the bottom of the image
+oval = Oval(Point(20, 150), Point(180, 199))
+oval.draw(win)
+
 win.getMouse()
 win.close()
