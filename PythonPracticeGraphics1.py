@@ -4,11 +4,8 @@ from graphics import *
 
 win = GraphWin()
 
-p = Point(50, 60)
-p.getX()
-50
-p.getY()
-60
-p.draw(win)
-p2 = Point(140, 100)
-p2.draw(win)
+# Draw a red circle at 100, 100 with a radius of 30
+center = Point(100, 100)
+circ = Circle(center, 30)
+circ.setFill('red')
+circ.draw(win)
