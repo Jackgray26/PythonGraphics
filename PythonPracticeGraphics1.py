@@ -1,6 +1,6 @@
 # Programme to practice simple graphical integration with python
 
-import graphics
+from graphics import *
 
-win = graphics.GraphWin()
+win = GraphWin()
 
