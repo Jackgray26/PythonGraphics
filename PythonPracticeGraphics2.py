@@ -2,12 +2,6 @@
 
 from graphics import * 
 
-
-# Create window with 320x240 resolution for readability and usability
-# Add the title of Investment Growth Chartt
-
-win = GraphWin("Investment Growth Chart", 320, 240)
-
 # Y Axis labels up to 10 Thousand
 # starting at 10 px up from bottom and 20 in
 
@@ -24,8 +18,18 @@ def main():
     #print an introduction
     print("This program creates a graph of a 10-year investment, accounting for growth.")
     
-    #get principle and interest rate
-    
+    #get principle and interest rate(apr)
+    principle = float(input("Enter the initial amount of money: "))
+    apr = float(input("Enter your interest rate (annual): "))
 
+    # Create window with 320x240 resolution for readability and usability
+    # Add the title of Investment Growth Chart
+    win = GraphWin("Investment Growth Chart", 320, 240)
+    win.setBackground("white")
+    Text(Point(20, 230), " 0.0k").draw(win)
+    Text(Point(20, 180), " 2.5k").draw(win)
+    Text(Point(20, 130), " 5.0k").draw(win)
+    Text(Point(20, 80), " 7.5k").draw(win)
+    Text(Point(20, 30), " 10.0k").draw(win)
 
 
