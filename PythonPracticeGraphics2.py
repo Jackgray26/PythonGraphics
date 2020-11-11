@@ -32,4 +32,10 @@ def main():
     Text(Point(20, 80), " 7.5k").draw(win)
     Text(Point(20, 30), " 10.0k").draw(win)
 
+    # bar at 0 years (initial investment) (by multiplying px per $ of 0.02 by the investment)
+    height = principle * 0.02
+    bar = Rectangle(Point(40, 230), Point(65, 230-height))
+    bar.setFIll("green")
+    bar.setWidth(2)
+    bar.draw(win)
 
