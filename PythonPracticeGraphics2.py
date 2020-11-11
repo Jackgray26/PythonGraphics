@@ -20,7 +20,7 @@ def main():
     
     #get principle and interest rate(apr)
     principle = float(input("Enter the initial amount of money: "))
-    apr = float(input("Enter your interest rate (annual): "))
+    apr = float(input("Enter your interest rate (annual) in decimal: "))
 
     # Create window with 320x240 resolution for readability and usability
     # Add the title of Investment Growth Chart
