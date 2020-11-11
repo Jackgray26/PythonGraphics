@@ -17,3 +17,15 @@ Draw Label " 5.0K" at (20, 130)
 Draw Label " 275K" at (20, 80)
 Draw Label " 10.0K" at (20, 30)
 
+# Note: 100 px is $5,000 or 0.02 px per $
+# each bar can be 25 px to account for margins
+
+def main():
+    #print an introduction
+    print("This program creates a graph of a 10-year investment, accounting for growth.")
+    
+    #get principle and interest rate
+    
+
+
+
