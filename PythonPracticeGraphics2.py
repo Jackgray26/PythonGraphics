@@ -5,11 +5,11 @@ from graphics import *
 # Y Axis labels up to 10 Thousand
 # starting at 10 px up from bottom and 20 in
 
-Draw label " 0.0K" at (20, 230)
-Draw Label " 2.5K" at (20, 180)
-Draw Label " 5.0K" at (20, 130)
-Draw Label " 275K" at (20, 80)
-Draw Label " 10.0K" at (20, 30)
+#Draw label " 0.0K" at (20, 230)
+#Draw Label " 2.5K" at (20, 180)
+#Draw Label " 5.0K" at (20, 130)
+#Draw Label " 275K" at (20, 80)
+#Draw Label " 10.0K" at (20, 30)
 
 # Note: 100 px is $5,000 or 0.02 px per $
 # each bar can be 25 px to account for margins
@@ -38,4 +38,23 @@ def main():
     bar.setFIll("green")
     bar.setWidth(2)
     bar.draw(win)
+
+    # Subsequent years using for loop through years
+    for year in range (1, 11):
+        # Calculations
+        principle = principle * (1 + apr)
+        #draw result into graph
+        x11 = year * 25 + 40
+        height = principle * 0.02
+        bar = Rectangle(Point(x11, 230), Point(x11+25, 230-height))
+        bar.setFill("green")
+        bar.setWidth(2)
+        bar.draw(win)
+
+    # Exit conditions
+    input("Press <Enter> to quit")
+    win.close()
+
+main()
+
 
