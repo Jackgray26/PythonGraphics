@@ -36,8 +36,7 @@ def main():
     Text(Point(20, 30), " 10.0k").draw(win)
 
     # bar at 0 years (initial investment) (by multiplying px per $ of 0.02 by the investment)
-    height = principle * 0.02
-    bar = Rectangle(Point(40, 230), Point(65, 230-height))
+    bar = Rectangle(Point(0, 0), Point(1, principle))
     bar.setFill("green")
     bar.setWidth(2)
     bar.draw(win)
@@ -47,9 +46,7 @@ def main():
         # Calculations
         principle = principle * (1 + apr)
         #draw result into graph
-        x11 = year * 25 + 40
-        height = principle * 0.02
-        bar = Rectangle(Point(x11, 230), Point(x11+25, 230-height))
+        bar = Rectangle(Point(year, 0), Point(year+1, principle))
         bar.setFill("green")
         bar.setWidth(2)
         bar.draw(win)
