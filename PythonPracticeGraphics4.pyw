@@ -26,3 +26,9 @@ def main():
     triangle.setFill("peachpuff")
     triangle.setOutline("cyan")
     triangle.draw(win)
+
+    # click to quit program
+    message.setText("Click to Exit")
+    win.getMouse()
+
+main()
