@@ -25,15 +25,14 @@ def main():
     # Create window with 320x240 resolution for readability and usability
     # Add the title of Investment Growth Chart
     win = GraphWin("Investment Growth Chart", 320, 240)
-
-    win.setCoords(0.0, 0.0, 10.0, 10000.0)
-    
+    win.setCoords(-1.75, 2000, 11.5, 10400.0)
     win.setBackground("white")
-    Text(Point(20, 230), " 0.0k").draw(win)
-    Text(Point(20, 180), " 2.5k").draw(win)
-    Text(Point(20, 130), " 5.0k").draw(win)
-    Text(Point(20, 80), " 7.5k").draw(win)
-    Text(Point(20, 30), " 10.0k").draw(win)
+    
+    Text(Point(-1, 0), " 0.0k").draw(win)
+    Text(Point(-1, 2500), " 2.5k").draw(win)
+    Text(Point(-1, 5000), " 5.0k").draw(win)
+    Text(Point(-1, 7500), " 7.5k").draw(win)
+    Text(Point(-1, 10000), " 10.0k").draw(win)
 
     # bar at 0 years (initial investment) (by multiplying px per $ of 0.02 by the investment)
     bar = Rectangle(Point(0, 0), Point(1, principle))
