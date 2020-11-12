@@ -21,4 +21,8 @@ def main():
     p3.draw(win)
 
 
-    
+    # fill the object via a polygon
+    triangle = Polygon(p1, p2, p3)
+    triangle.setFill("peachpuff")
+    triangle.setOutline("cyan")
+    triangle.draw(win)
