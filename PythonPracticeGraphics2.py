@@ -25,6 +25,9 @@ def main():
     # Create window with 320x240 resolution for readability and usability
     # Add the title of Investment Growth Chart
     win = GraphWin("Investment Growth Chart", 320, 240)
+
+    win.setCoords(0.0, 0.0, 10.0, 10000.0)
+    
     win.setBackground("white")
     Text(Point(20, 230), " 0.0k").draw(win)
     Text(Point(20, 180), " 2.5k").draw(win)
