@@ -28,3 +28,13 @@ def main():
     # Conversion
     celsius = float(inputText.getText())
     fahrenheit = (9.0/5.0) * celsius + 32
+
+    # Display and change button to quit
+    outputText.setText(round(fahrenheit, 2))
+    button.setText("Exit")
+
+    # Quit on click
+    win.getMouse()
+    win.close()
+
+main()
