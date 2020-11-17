@@ -1,6 +1,6 @@
 # Graphics Program to use click-placable text with python
 
-from graphics import #
+from graphics import *
 
 def main():
     win =  GraphWin("Click to place Text", 400, 400)
