@@ -10,7 +10,7 @@ def main():
 
     
     # Interface Creation
-    Text(Point(1, 3), "Celsius Temperature: ").draw(win)
+    Text(Point(1, 3), "    Celsius Temperature: ").draw(win)
     Text(Point(1, 1), "Fahrenheit Temperature: ").draw(win)
     inputText = Entry(Point(2.25, 3), 5)
     inputText.setText("0.0")
