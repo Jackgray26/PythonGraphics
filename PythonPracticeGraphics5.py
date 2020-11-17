@@ -8,4 +8,7 @@ def main():
     for i in range(10):
         pt = win.getMouse()
         key = win.getKey()
-        
+        label = Text(pt, key)
+        label.draw(win)
+
+main()
