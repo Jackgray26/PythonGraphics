@@ -21,3 +21,10 @@ def main():
     button = Text(Point(1.5, 2.0), "CONVERT!")
     button.draw(win)
     Rectangle(Point(1.0, 1.5), Point(2, 2.5)).draw(win)
+
+    # proceed on Mouse click
+    win.getMouse()
+
+    # Conversion
+    celsius = float(inputText.getText())
+    fahrenheit = (9.0/5.0) * celsius + 32
