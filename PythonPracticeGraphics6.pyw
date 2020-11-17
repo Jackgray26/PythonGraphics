@@ -14,3 +14,10 @@ def main():
     Text(Point(1, 1), "Fahrenheit Temperature: ").draw(win)
     inputText = Entry(Point(2.25, 3), 5)
     inputText.setText("0.0")
+
+    inputText.draw(win)
+    outputText = Text(Point(2.25, 1), " ")
+    outputText.draw(win)
+    button = Text(Point(1.5, 2.0), "CONVERT!")
+    button.draw(win)
+    Rectangle(Point(1.0, 1.5), Point(2, 2.5)).draw(win)
