@@ -17,6 +17,9 @@ from graphics import *
 def drawBar(window, year, height):
     # Draws a bar using given values
     bar = Rectangle(Point(year, 0), Point(year+1, height))
+    bar.setFill("green")
+    bar.setWidth(2)
+    bar.draw(window)
 
 def main():
     #print an introduction
