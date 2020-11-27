@@ -41,21 +41,11 @@ def main():
     Text(Point(-1, 7500), " 7.5k").draw(win)
     Text(Point(-1, 10000), " 10.0k").draw(win)
 
-    # bar at 0 years (initial investment) (by multiplying px per $ of 0.02 by the investment)
-    bar = Rectangle(Point(0, 0), Point(1, principle))
-    bar.setFill("green")
-    bar.setWidth(2)
-    bar.draw(win)
-
-    # Subsequent years using for loop through years
-    for year in range (1, 11):
-        # Calculations
+    # draw the bar using drawBar
+    drawBar(win, 0, principal)
+    for year in range(1, 11):
         principle = principle * (1 + apr)
-        #draw result into graph
-        bar = Rectangle(Point(year, 0), Point(year+1, principle))
-        bar.setFill("green")
-        bar.setWidth(2)
-        bar.draw(win)
+        drawBar(win, year, principle)
 
     # Exit conditions
     input("Press <Enter> to quit")
