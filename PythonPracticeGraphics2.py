@@ -15,7 +15,8 @@ from graphics import *
 # each bar can be 25 px to account for margins
 
 def drawBar(window, year, height):
-    
+    # Draws a bar using given values
+    bar = Rectangle(Point(year, 0), Point(year+1, height))
 
 def main():
     #print an introduction
