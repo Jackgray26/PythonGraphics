@@ -42,7 +42,7 @@ def main():
     Text(Point(-1, 10000), " 10.0k").draw(win)
 
     # draw the bar using drawBar
-    drawBar(win, 0, principal)
+    drawBar(win, 0, principle)
     for year in range(1, 11):
         principle = principle * (1 + apr)
         drawBar(win, year, principle)
