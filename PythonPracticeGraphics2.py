@@ -14,6 +14,9 @@ from graphics import *
 # Note: 100 px is $5,000 or 0.02 px per $
 # each bar can be 25 px to account for margins
 
+def drawBar(window, year, height):
+    
+
 def main():
     #print an introduction
     print("This program creates a graph of a 10-year investment, accounting for growth.")
